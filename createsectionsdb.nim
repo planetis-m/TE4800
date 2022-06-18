@@ -17,7 +17,7 @@ for m in model.split(';'):
       db.exec(sql(m), [])
 
 # Insert data
-for k, (name, h, b, tw, tf, r, area, weight) in data:
+for k, (name, h, b, tw, tf, r, area, weight) in data.pairs:
    db.exec(sql"insert into ipe(id, name, h, b, tw, tf, r, area, weight) values(?, ?, ?, ?, ?, ?, ?, ?, ?)",
            k + 1, name, h, b, tw, tf, r, area, weight)
 

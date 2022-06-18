@@ -1,4 +1,4 @@
-import morpheus, algorithm
+import manu, algorithm
 
 # Given data
 let
